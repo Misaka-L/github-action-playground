@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: curl https://api.my-ip.io/v2/ip.json
+        run: curl https://api.myip.com
