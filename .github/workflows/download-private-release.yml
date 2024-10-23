@@ -13,7 +13,7 @@ jobs:
         with:
           repository: 'Misaka-L/private-samples'
           latest: true
-          fileName: 'smaple.zip'
+          fileName: '*.zip'
           extract: true
           out-file-path: 'workspace'
           token: ${{ secrets.GH_TOKEN }}
