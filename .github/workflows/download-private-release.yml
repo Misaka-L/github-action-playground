@@ -20,4 +20,4 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: LS
-        run: ls '${{github.workspace}}/workspace'
+        run: ls '${{github.workspace}}'
