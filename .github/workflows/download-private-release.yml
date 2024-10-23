@@ -16,6 +16,7 @@ jobs:
           fileName: 'smaple.zip'
           extract: true
           out-file-path: 'workspace'
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: LS
         run: ls '${{github.workspace}}/workspace'
