@@ -2,6 +2,7 @@ name: Download Private Release
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   build:
@@ -15,7 +16,7 @@ jobs:
           latest: true
           fileName: '*.zip'
           extract: true
-          out-file-path: 'workspace'
+          out-file-path: '.'
           token: ${{ secrets.GH_TOKEN }}
 
       - name: LS
