@@ -1,0 +1,21 @@
+name: Download Private Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: release-downloader
+        uses: robinraju/release-downloader@v1.11
+        with:
+          repository: 'Misaka-L/private-samples'
+          latest: true
+          fileName: 'smaple.zip'
+          extract: true
+          out-file-path: 'workspace'
+
+      - name: LS
+        run: ls '${{github.workspace}}/workspace'
